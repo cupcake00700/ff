@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    font-family: arial;
+    border: border-box;
+}
+.about{
+    padding-left:100px;
+    padding-right:150px;
+    padding-top:50px;
+    height:598px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color: bisque;
+}

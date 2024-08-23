@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    font-family: arial;
+    border: border-box;
+}
+
+.hero-section{
+    background-image:url(main-image1.jpg);
+    background-size:cover;
+    height:400px;
+    width:1520px;
+}
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(77, 40, 9, 0.939);
+}
+
+.box{
+    border:4px solid yellow;
+    height:350px;
+    width:350px;
+    background-color:white;
+
+}
+.box:hover{
+    border:4px solid blue;
+}
+/**box1 starts here**/
+.box1-image{
+    background-image: url("shoe1.jpg");
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro1{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main1{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+.money{
+    display:flex;
+    justify-content:space-around;
+}
+.s-money{
+    text-decoration: line-through;
+    color:dimgray;
+    font-size: larger;
+}
+.r-money{
+    font-size: x-large;
+    color:darkslateblue;
+}
+.off{
+    font-size: larger;
+    color:red;
+}
+.box-footer{
+    display:flex;
+    justify-content: right;
+    width:340px;
+    margin-top:10px;
+} 
+/**box1 ends here**/
+ .box2-image{
+    background-image: url(shoe2.jpg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro2{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main2{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+/**box2 ends here**/
+ .box3-image{
+    background-image: url(shoe4.jpg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro3{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main3{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box3 ends here**/
+ .box4-image{
+    background-image: url(shoe6.jpg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro4{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main4{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box 4 ends here**/
+ .box5-image{
+    background-image: url(shoe21.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro5{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main5{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+.money{
+    display:flex;
+    justify-content:space-around;
+}
+.s-money{
+    text-decoration: line-through;
+    color:dimgray;
+    font-size: larger;
+}
+.r-money{
+    font-size: x-large;
+    color:darkslateblue;
+}
+.off{
+    font-size: larger;
+    color:red;
+}
+.box-footer{
+    display:flex;
+    justify-content: right;
+    width:340px;
+    margin-top:10px;
+} 
+/**box5 ends here**/
+ .box6-image{
+    background-image: url(shoe9.jpg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro6{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main6{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box6 ends here**/
+ .box7-image{
+    background-image: url(shoe11.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro7{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main7{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box7 ends here**/
+ .box8-image{
+    background-image: url(shoe12.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro8{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main8{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box 8 ends here**/
+ .box9-image{
+    background-image: url(shoe15.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro9{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main9{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+.money{
+    display:flex;
+    justify-content:space-around;
+}
+.s-money{
+    text-decoration: line-through;
+    color:dimgray;
+    font-size: larger;
+}
+.r-money{
+    font-size: x-large;
+    color:darkslateblue;
+}
+.off{
+    font-size: larger;
+    color:red;
+}
+.box-footer{
+    display:flex;
+    justify-content: right;
+    width:340px;
+    margin-top:10px;
+} 
+/**box9 ends here**/
+ .box10-image{
+    background-image: url(shoe18.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro10{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main10{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box10 ends here**/
+ .box11-image{
+    background-image: url(shoe19.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro11{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main11{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+} 
+/**box11 ends here**/
+ .box12-image{
+    background-image: url(shoe20.jpeg);
+    background-size:cover;
+    height:200px;
+    width:350px;
+}
+
+.intro12{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.main12{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+.panel1{
+    color:bisque;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:50px;
+}
+#p1:hover{
+    border-bottom: 1px solid white;;
+}  
