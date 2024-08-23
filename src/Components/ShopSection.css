@@ -345,8 +345,16 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    height:50px;
+    
 }
-#p1:hover{
-    border-bottom: 1px solid white;;
-}  
+
+.buttonBottom{
+    background-color: beige;
+    width:130px;
+    height:40px;
+    margin-bottom:10px;
+    font-size: medium;
+    font-weight:600;
+    color:brown
+    
+}

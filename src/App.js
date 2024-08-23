@@ -1,4 +1,6 @@
 import './App.css';
+import Login from './Components/Login';
+import Regform from './Components/Regform';
 import Navbar from './Components/Navbar';
 import ShopSection from './Components/ShopSection';
 import Footer from './Components/Footer';
@@ -18,7 +20,9 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route path="about" element={[<About/>, <Footer/>,]} />
-          <Route path="/" element={[<Navbar/>, <ShopSection/>,<Footer/>]} />
+          <Route path="home" element={[<Navbar/>, <ShopSection/>,<Footer/>]} />
+          <Route path="/" element ={<Login/>}/>
+          <Route path="regform" element={<Regform/>}/>
           <Route path="contact" element ={[<ContactUs/>,<Footer/>]} />
           <Route path="help" element={[<Help/>,<Footer/>]} />
           <Route path="wishlist" element={[<Navbar/>,<Wishlist/>]} />

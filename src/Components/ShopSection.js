@@ -367,7 +367,7 @@ export default function ShopSection() {
         </div>
     </div>
     <div className="panel1"> 
-    <button onClick={scrollToTop}>
+    <button onClick={scrollToTop} className='buttonBottom'>
       Back to Top
     </button>
     </div>
