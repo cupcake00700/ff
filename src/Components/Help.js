@@ -12,7 +12,7 @@ export default function Help() {
       <p>You do this by navigating through our collection, selecting your preferred model, and then clicking "Add to Cart." Finally, at the checkout counter, you are finally presented with a review of your order, and you get to fill in your shipping information and pay for your order securely.</p><br></br>
       <h4>Can I track my order?</h4><br></br>
       <p>Yes, definitely so. As soon as we have shipped your order, we will notify you with an email containing your tracking number. With this, you can manage the courier's tracking page either through the website or directly to see the progress of your order.</p><br></br>
-      <h4>How do I return my item?</h4>
+      <h4>How do I return my item?</h4><br></br>
       <p>All unworn products are returnable within 30 days of purchase. In the case that you are not satisfied with what you have received, please proceed by getting in touch with our customer service in order to return an item.</p><br></br>
       <h4>How do I contact customer service?</h4><br></br>
       <p>Our customer service department can be reached via email at support@footwearfusion.com or by phone at 1-800-555-1234 between the hours of 9 AM – 6 PM (Monday – Friday).</p><br></br>

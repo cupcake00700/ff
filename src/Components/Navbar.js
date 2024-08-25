@@ -2,13 +2,12 @@ import React from 'react'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
+
+
 export default function navbar() {
   return (
     <div>
        <div className="navbar">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-       
 
        <div className="navbar-logo">
            <div className="logo"></div>
@@ -35,7 +34,7 @@ export default function navbar() {
        <div className="nav-search border">
            <input className="nav-input"placeholder="  Search for shoes"/>
            <div className="search-icon">
-               <i className="fa-solid fa-magnifying-glass"></i>   
+                <i className="fa-solid fa-magnifying-glass"></i>  
            </div>
        </div>
 
@@ -56,9 +55,7 @@ export default function navbar() {
                <Link to="/cart" className="link">Cart</Link>
            </div>
        </div>
-       <div className="mode-changer">
-           <button id="mode"><i className="fa-solid fa-lightbulb"></i></button>
-       </div>
+       
        
       </div>
     </div>

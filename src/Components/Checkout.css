@@ -1,0 +1,167 @@
+/* Checkout Component Styles */
+.checkout-background {
+    background-image: url('wood.jpg');
+    background-position: cover;
+    padding: 63px;
+}
+
+.checkout-container {
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+    background-color: beige;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    height: 540px;
+    border:4px solid rgb(74, 12, 245);
+}
+
+.checkout-image {
+    flex-shrink: 0;
+    width: 300px;
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-header h1 {
+    margin-bottom: 20px;
+    color: #a5274b;
+}
+
+.checkout-header p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+#sprice {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d3537;
+    text-decoration: line-through;
+}
+
+#rprice {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #a5274b;
+}
+
+#discount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.wishlistbutton {
+    margin-left: 50px;
+    background-color: rgb(246, 246, 22);
+    color: #a5274b;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.cartbutton {
+    background-color: rgb(232, 232, 22);
+    color: #a5274b;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.cartbutton:hover {
+    background-color: rgb(191, 191, 38);
+}
+
+.wishlistbutton:hover {
+    background-color: rgb(191, 191, 38);
+}
+
+.quantity-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.quantity-buttons h4 {
+    margin-top: 8px;
+    color:#a5274b;
+}
+
+.quantity-buttons p {
+    margin-top: 8px;
+    color:#7a293f;
+}
+
+#less, #more {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border:2px solid rgb(165, 42, 67);
+    background-color: white;
+}
+
+
+.size-selection {
+    margin-top: 30px;
+}
+
+.size-selection h4 {
+    margin-bottom: 10px;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.size-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #a5274b;
+    border-radius: 5px;
+    background-color: white;
+    color: #a5274b;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.size-button:hover {
+    background-color: #a5274b;
+    color: white;
+}
+
+.size-button.selected {
+    background-color: #a5274b;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkout-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .checkout-info {
+        text-align: center;
+    }
+}

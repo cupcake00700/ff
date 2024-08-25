@@ -5,9 +5,9 @@ import { Navigate } from 'react-router-dom';
 export default function Regform() {
   return (
     <div>
-      <div class="front">
-        <div class="image"></div>
-        <div class="form">
+      <div className="front">
+        <div className="image"></div>
+        <div className="form">
             <h2>Registration Form</h2>
             <form action="#" method="post" onSubmit={()=>{Navigate('./login')}}>
                <p>User Name:</p>

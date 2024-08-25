@@ -1,360 +1,135 @@
-*{
-    margin:0;
-    font-family: arial;
-    border: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.recommended{
+    display: flex;
+    justify-content: left;
+    height:50px;
+    background-color: rgb(151, 95, 51);
+}
+.recommended button{
+    margin-left:50px;
+    margin-top:11px;
+    margin-bottom:11px;
+    width:100px;
+    text-align: center;
+    background-color: rgb(228, 214, 193);
+    color:black;
+    border-radius: 50%;
+}
+.recommended h4{
+    margin-top:15px;
+    margin-left:50px;
+    color:rgb(228, 214, 193);
+
+}
+.recommended button.active {
+    background-color: black;
+    color: rgb(78, 54, 183);
 }
 
-.hero-section{
-    background-image:url(main-image1.jpg);
-    background-size:cover;
-    height:400px;
-    width:1520px;
+
+.hero-section {
+    background-image: url(main-image1.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
-.shop-section{
-    display:flex;
-    flex-wrap:wrap;
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
     gap: 20px;
-    background-color: rgba(77, 40, 9, 0.939);
 }
 
-.box{
-    border:4px solid yellow;
-    height:350px;
-    width:350px;
-    background-color:white;
-
-}
-.box:hover{
-    border:4px solid blue;
-}
-/**box1 starts here**/
-.box1-image{
-    background-image: url("shoe1.jpg");
-    background-size:cover;
-    height:200px;
-    width:350px;
+.box {
+    border: 4px solid yellow;
+    height: 350px;
+    width: 23%; /* Ensures 4 boxes per row */
+    background-color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
 }
 
-.intro1{
+.box:hover {
+    border: 4px solid blue;
+}
+
+.intro {
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     line-height: 40px;
 }
-.main1{
+
+.main {
     font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     line-height: 50px;
 }
-.money{
-    display:flex;
-    justify-content:space-around;
+
+.money {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
 }
-.s-money{
+
+.s-money {
     text-decoration: line-through;
-    color:dimgray;
+    color: dimgray;
     font-size: larger;
 }
-.r-money{
+
+.r-money {
     font-size: x-large;
-    color:darkslateblue;
+    color: darkslateblue;
 }
-.off{
+
+.off {
     font-size: larger;
-    color:red;
+    color: red;
 }
-.box-footer{
-    display:flex;
+
+.box-footer {
+    display: flex;
     justify-content: right;
-    width:340px;
-    margin-top:10px;
-} 
-/**box1 ends here**/
- .box2-image{
-    background-image: url(shoe2.jpg);
-    background-size:cover;
-    height:200px;
-    width:350px;
+    padding: 10px;
 }
 
-.intro2{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main2{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-}
-/**box2 ends here**/
- .box3-image{
-    background-image: url(shoe4.jpg);
-    background-size:cover;
-    height:200px;
-    width:350px;
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .box {
+        width: 48%; /* Adjust to 2 boxes per row on medium screens */
+    }
 }
 
-.intro3{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main3{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box3 ends here**/
- .box4-image{
-    background-image: url(shoe6.jpg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro4{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main4{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box 4 ends here**/
- .box5-image{
-    background-image: url(shoe21.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro5{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main5{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-}
-.money{
-    display:flex;
-    justify-content:space-around;
-}
-.s-money{
-    text-decoration: line-through;
-    color:dimgray;
-    font-size: larger;
-}
-.r-money{
-    font-size: x-large;
-    color:darkslateblue;
-}
-.off{
-    font-size: larger;
-    color:red;
-}
-.box-footer{
-    display:flex;
-    justify-content: right;
-    width:340px;
-    margin-top:10px;
-} 
-/**box5 ends here**/
- .box6-image{
-    background-image: url(shoe9.jpg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro6{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main6{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box6 ends here**/
- .box7-image{
-    background-image: url(shoe11.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro7{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main7{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box7 ends here**/
- .box8-image{
-    background-image: url(shoe12.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro8{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main8{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box 8 ends here**/
- .box9-image{
-    background-image: url(shoe15.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro9{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main9{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-}
-.money{
-    display:flex;
-    justify-content:space-around;
-}
-.s-money{
-    text-decoration: line-through;
-    color:dimgray;
-    font-size: larger;
-}
-.r-money{
-    font-size: x-large;
-    color:darkslateblue;
-}
-.off{
-    font-size: larger;
-    color:red;
-}
-.box-footer{
-    display:flex;
-    justify-content: right;
-    width:340px;
-    margin-top:10px;
-} 
-/**box9 ends here**/
- .box10-image{
-    background-image: url(shoe18.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro10{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main10{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box10 ends here**/
- .box11-image{
-    background-image: url(shoe19.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro11{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main11{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
-} 
-/**box11 ends here**/
- .box12-image{
-    background-image: url(shoe20.jpeg);
-    background-size:cover;
-    height:200px;
-    width:350px;
-}
-
-.intro12{
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.main12{
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 50px;
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Adjust to 1 box per row on small screens */
+    }
 }
 .panel1{
-    color:bisque;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:large;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    
+    text-align: center;
+    padding-top:20px;
 }
-
 .buttonBottom{
-    background-color: beige;
-    width:130px;
-    height:40px;
     margin-bottom:10px;
-    font-size: medium;
-    font-weight:600;
-    color:brown
-    
+    background-color: rgb(201, 174, 140);
+    width:150px;
+    height:40px;
+    border:2px solid bisque;
+    font-size: larger;
+    font-weight: 600;
+    color:rgba(104, 43, 15, 0.782);
+}
+.shopAndPanel1{
+    background-image: url(wood.jpg);
+    background-position: cover;
 }

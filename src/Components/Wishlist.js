@@ -1,15 +1,10 @@
 import React from 'react'
-import './Wishlist.css';
 
 export default function Wishlist() {
-  let func=() =>{
-    
-  }
   return (
     <div>
-      <div className="wholeBody">
-        
-      </div>
+      <h2>this is wishlist</h2>
     </div>
   )
 }
+
