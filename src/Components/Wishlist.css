@@ -1,6 +1,57 @@
-*{
-    margin:0;
-    font-family: arial;
-    border: border-box;
+/* Wishlist.css */
+
+.wishlist-container {
+    background-image: url('wood4.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    padding: 20px;
+  }
+.wishlist-container h2{
+    margin:30px;
+    color:aliceblue;
 }
+  
+.wishlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin:20px;
+  }
+  
+  .wishlist-item {
+    border: 2px solid #b00c79;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    background-color: beige;
+    border-radius: 10px;
+  }
+  
+  .wishlist-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .wishlist-details {
+    margin-top: 15px;
+    color:#e11238;
+  }
+  
+  .remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .remove-button:hover {
+    background-color: #d32f2f;
+  }
+  
 

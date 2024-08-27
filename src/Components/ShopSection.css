@@ -4,33 +4,88 @@
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-.recommended{
+
+.total-shopsection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:stretch;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #7f4f24;
+    height: 800px;
+}
+
+.sidebar-contents {
+    padding: 20px;
+}
+
+.sidebar-contents h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: beige;
+}
+
+.sidebar-contents button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(228, 214, 193);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar-contents button:hover {
+    background-color: rgb(200, 180, 160);
+}
+
+.sidebar-contents button.active {
+    background-color: #a68a64;
+    color: rgb(12, 11, 11);
+    font-weight: bolder;
+}
+
+.recommended {
     display: flex;
     justify-content: left;
-    height:50px;
+    height: 50px;
     background-color: rgb(151, 95, 51);
 }
-.recommended button{
-    margin-left:50px;
-    margin-top:11px;
-    margin-bottom:11px;
-    width:100px;
+
+.recommended button {
+    margin-left: 50px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    width: 100px;
     text-align: center;
     background-color: rgb(228, 214, 193);
-    color:black;
+    color: black;
     border-radius: 50%;
 }
-.recommended h4{
-    margin-top:15px;
-    margin-left:50px;
-    color:rgb(228, 214, 193);
 
+.recommended h4 {
+    margin-top: 15px;
+    margin-left: 50px;
+    color: rgb(228, 214, 193);
 }
+
 .recommended button.active {
-    background-color: black;
-    color: rgb(78, 54, 183);
+    background-color: #d4882b;
+    font-weight: bolder;
 }
 
+.recommended button:hover {
+    background-color: #b6ad90;
+}
+
+.hero-and-mainsection {
+    min-width: 1330px;
+}
 
 .hero-section {
     background-image: url(main-image1.jpg);
@@ -115,21 +170,61 @@
         width: 100%; /* Adjust to 1 box per row on small screens */
     }
 }
-.panel1{
+
+.panel1 {
     text-align: center;
-    padding-top:20px;
+    padding-top: 20px;
+    height: 90px;
 }
-.buttonBottom{
-    margin-bottom:10px;
-    background-color: rgb(201, 174, 140);
-    width:150px;
-    height:40px;
-    border:2px solid bisque;
+
+.buttonBottom {
+    margin-bottom: 10px;
+    background-color: bisque;
+    width: 150px;
+    height: 40px;
     font-size: larger;
     font-weight: 600;
-    color:rgba(104, 43, 15, 0.782);
+    color: rgb(53, 46, 46);
 }
-.shopAndPanel1{
+
+.buttonBottom:hover {
+    background-color: #ceb48d;
+}
+
+.shopAndPanel1 {
     background-image: url(wood.jpg);
     background-position: cover;
+}
+
+.sidebar-contents .price {
+    margin-top: 30px; 
+}
+
+.sidebar-contents .price h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: beige;
+}
+
+.sidebar-contents .price button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(228, 214, 193);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar-contents .price button:hover {
+    background-color: rgb(200, 180, 160);
+}
+
+.sidebar-contents .price button.active {
+    background-color: #a68a64;
+    color: rgb(12, 11, 11);
+    font-weight: bolder;
 }

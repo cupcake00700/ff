@@ -9,28 +9,46 @@ import ContactUs from './Components/ContactUs';
 import Help from './Components/Help';
 import Wishlist from './Components/Wishlist';
 import Cart from './Components/Cart';
-import Checkout from './Components/Checkout'; 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Checkout from './Components/Checkout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
+  const [wishlist, setWishlist] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const addToWishlist = (item) => {
+    setWishlist((prevWishlist) => {
+      if (!prevWishlist.some(wishItem => wishItem.id === item.id)) {
+        return [...prevWishlist, item];
+      }
+      return prevWishlist;
+    });
+  };
+
+  const removeFromWishlist = (id) => {
+    setWishlist((prevWishlist) => prevWishlist.filter(item => item.id !== id));
+  };
+
   return (
-    <>
     <BrowserRouter>
-      <Routes>
-          <Route path="about" element={[<About/>, <Footer/>,]} />
-          <Route path="home" element={[<Navbar/>, <ShopSection/>,<Footer/>]} />
-          <Route path="/" element={<Login/>}/>
-          <Route path="regform" element={<Regform/>}/>
-          <Route path="contact" element={[<ContactUs/>,<Footer/>]} />
-          <Route path="help" element={[<Help/>,<Footer/>]} />
-          <Route path="wishlist" element={[<Navbar/>,<Wishlist/>]} />
-          <Route path="cart" element={[<Navbar/>,<Cart/>]} />
-          <Route path="checkout/:id" element={[<Navbar/>, <Checkout/>, <Footer/>]} /> 
-      </Routes>
+      <div className="app-container">
+        <main>
+          <Routes>
+            <Route path="about" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <About />, <Footer />]} />
+            <Route path="home" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <ShopSection addToWishlist={addToWishlist} searchQuery={searchQuery} />, <Footer />]} />
+            <Route path="/" element={<Login />} />
+            <Route path="regform" element={<Regform />} />
+            <Route path="contact" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <ContactUs />, <Footer />]} />
+            <Route path="help" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <Help />, <Footer />]} />
+            <Route path="wishlist" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <Wishlist wishlist={wishlist} removeFromWishlist={removeFromWishlist} />]} />
+            <Route path="cart" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <Cart />]} />
+            <Route path="checkout/:id" element={[<Navbar wishlist={wishlist} onSearch={setSearchQuery} />, <Checkout addToWishlist={addToWishlist} />]} />
+          </Routes>
+        </main>
+      </div>
     </BrowserRouter>
-    </>
   );
 }
 
