@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-export default function Navbar({ wishlist, onSearch }) {
+export default function Navbar({ wishlist, onSearch, cart }) {
   const handleSearchChange = (event) => {
     onSearch(event.target.value);
   };
@@ -13,15 +13,6 @@ export default function Navbar({ wishlist, onSearch }) {
         <div className="logo"></div>
       </div>
 
-      
-
-      <div className="nav-address border">
-        <p id="nav-add-a">Deliver to</p>
-        <div className="add-icon">
-          <p id="nav-add-b">Kolkata</p>
-          <i className="fa-solid fa-location-dot"></i>
-        </div>
-      </div>
 
       <div className="nav-search border">
         <input
@@ -50,7 +41,7 @@ export default function Navbar({ wishlist, onSearch }) {
           <i className="fa-solid fa-cart-shopping"></i>
         </div>
         <div className="cart-text">
-          <Link to="/cart" className="link">Cart</Link>
+          <Link to="/cart" className="link">Cart ({cart.length})</Link>
         </div>
       </div>
     </div>

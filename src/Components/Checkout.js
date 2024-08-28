@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import data from './db.json';
 import './Checkout.css';
 
-function Checkout({ addToWishlist }) {
+function Checkout({ addToWishlist, addToCart }) {
   const { id } = useParams();
   const shoe = data.find(item => item.id === id);
 
@@ -32,6 +32,12 @@ function Checkout({ addToWishlist }) {
     addToWishlist(shoe);
     alert("Item added to wishlist");
   };
+
+  const handleAddToCart = () => {
+    addToCart(shoe, quantity, selectedSize);
+    alert("Item added to cart");
+  };
+  
 
   return (
     <div className="checkout-background">
@@ -71,7 +77,7 @@ function Checkout({ addToWishlist }) {
           </div>
 
           <div className="buttons">
-            <button className="cartbutton">Add to Cart</button>
+            <button className="cartbutton" onClick={handleAddToCart}>Add to Cart</button>
             <button className="wishlistbutton" onClick={handleAddToWishlist}>Add to Wishlist</button>
           </div>
         </div>

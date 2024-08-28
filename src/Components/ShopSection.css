@@ -55,6 +55,7 @@
     justify-content: left;
     height: 50px;
     background-color: rgb(151, 95, 51);
+    border-bottom:6px solid rgb(96, 57, 28);
 }
 
 .recommended button {
@@ -88,12 +89,34 @@
 }
 
 .hero-section {
-    background-image: url(main-image1.jpg);
-    background-size: cover;
+    position: relative;
     height: 400px;
     width: 100%;
+    overflow: hidden;
 }
 
+.hero-image {
+    position: absolute;/* Ensures images are stacked on top of each other */
+    top: 0;
+    left: 0; 
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-image.active {
+    opacity: 1;/* Whichever image is active, its shown*/
+}
+
+.divider{
+    height:40px;
+    background-color:rgb(151, 95, 51);
+    border-top:6px solid rgb(96, 57, 28);
+    border-bottom:6px solid rgb(96, 57, 28);
+}
 .shop-section {
     display: flex;
     flex-wrap: wrap;

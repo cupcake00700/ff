@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ShopSection.css";
 import data from "./db.json";
@@ -6,6 +6,14 @@ import data from "./db.json";
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+const heroImages = [
+  "/images/main-image1.jpg",
+  "/images/abc.jpeg",
+  "images/jkl.jpeg",
+  "images/lmn.jpeg"
+  // Add more image URLs as needed
+];
 
 const priceRanges = [
   { label: "Under $50", min: 0, max: 50 },
@@ -16,10 +24,18 @@ const priceRanges = [
 ];
 
 export default function ShopSection({ searchQuery }) {
+  const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedPriceRange, setSelectedPriceRange] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeroIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   const filteredData = data.filter((shoe) => {
     const price = parseFloat(shoe.r_money.replace(/[^0-9.-]+/g, ""));
@@ -95,7 +111,8 @@ export default function ShopSection({ searchQuery }) {
               className={selectedColor === "" ? "active" : ""}
             >
               All
-            </button><br></br>
+            </button>
+            <br />
 
             <h1>Price:</h1>
             {priceRanges.map((range) => (
@@ -119,7 +136,7 @@ export default function ShopSection({ searchQuery }) {
         </div>
 
         <div className="hero-and-mainsection">
-          <div className="recommended">
+        <div className="recommended">
             <h4>Recommended:</h4>
             <button
               onClick={() => handleBrandClick("Puma")}
@@ -140,8 +157,17 @@ export default function ShopSection({ searchQuery }) {
               All
             </button>
           </div>
+          <div className="hero-section">
+            {heroImages.map((image, index) => (
+              <div
+                key={index}
+                className={`hero-image ${index === currentHeroIndex ? "active" : ""}`}
+                style={{ backgroundImage: `url(${image})` }}
+              ></div>
+            ))}
+          </div>
 
-          <div className="hero-section"></div>
+          <div className="divider"></div>
 
           <div className="shopAndPanel1">
             <div className="shop-section">
